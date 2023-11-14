@@ -1,0 +1,60 @@
+/*Reset Styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 700;
+  color: coral;
+  font-size: 20px;
+  font-family: "Calisto MT";
+  background-color: peachpuff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+/*
+End of Reset Styles
+ */
+/* General Styles */
+
+.general-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+.img-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.link-wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image {
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* End of General Styles for web-page */
+
+
+
