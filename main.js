@@ -1,9 +1,11 @@
 //Event
 // document.addEventListener('DOMContentLoaded', showFoxRandomImages());
+// const loader = document.getElementsByClassName('load')[0];
 //
 // //function for getting data from server and showing it on the web-page with async await and fetch
 // //2) Через специальный синтаксис async/await, тоже с обработчиком ошибок
 // async function showFoxRandomImages() {
+//   loader.classList.toggle('active');
 //   try {
 //     let response = await fetch('https://randomfox.ca/floof/');
 //     let data = await response.json();
@@ -28,7 +30,11 @@
 //       container1.prepend(err);
 //     }
 //   }
-// };
+// }
+// showFoxRandomImages().finally(() => {
+//   loader.classList.toggle('active');
+// })
+
 
 
 //1) Традиционным способом, с использованием цепочек промисов, включая обработку ошибок
@@ -37,6 +43,7 @@
 
 //function to show random images and link of foxes with promise and fetch
 // function showRandomFoxes() {
+//   loader.classList.toggle('active');
 //   const fetchPromise = fetch("https://randomfox.ca/floof/"); //
 //   fetchPromise.then(response => {
 //     return response.json();
@@ -61,6 +68,8 @@
 //       document.body.style.backgroundColor = 'lightgrey';
 //       container1.prepend(err);
 //     }
+//   }).finally(() => {
+//     loader.classList.toggle('active');
 //   })
 // }
 

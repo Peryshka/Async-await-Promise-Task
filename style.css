@@ -22,6 +22,13 @@ body {
 End of Reset Styles
  */
 /* General Styles */
+.load {
+  display: none;
+  text-align: center;
+}
+.load.active {
+  display: block;
+}
 
 .general-wrap {
   display: flex;
